@@ -9,7 +9,13 @@ from minimax import minimax, AI_PIECE, is_terminal_node
 from board import drop_piece, get_next_open_row
 
 app = FastAPI()
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # You can restrict this to your Vercel URL later!
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # --- CORS SETUP ---
 # This allows your React frontend (typically running on port 3000 or 5173) 
 # to communicate with this FastAPI backend without browser security blocks.
