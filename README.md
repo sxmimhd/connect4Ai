@@ -11,6 +11,14 @@
 
 A modern, neon-drenched take on the classic Connect Four game. This project features a beautiful frontend built with React and Tailwind CSS, powered by a Python backend that utilizes a highly advanced Adversarial Search AI to crush human opponents.
 
+## 🌐 Live Demo
+
+Play the game live right now! The architecture is fully decoupled and hosted in the cloud:
+
+* **Frontend (UI):** Hosted on [Vercel](https://connectfour-ai.vercel.app/)
+* **Backend (AI Engine):** Hosted on [Hugging Face Spaces](https://sxmimhd-connect4-ai.hf.space)
+
+---
 ## ✨ Features
 
 * **🧠 Advanced AI Opponent:** The backend utilizes the **Minimax algorithm with Alpha-Beta pruning** to calculate optimal moves in milliseconds.
