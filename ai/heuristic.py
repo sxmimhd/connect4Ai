@@ -27,7 +27,7 @@ def score_position(board, piece):
     """Scans the entire board to calculate an overall score for the given piece."""
     score = 0
     ROWS = len(board)
-    COLS = len(board)
+    COLS = len(board[0])
 
     # 1. Score center column (Advanced logic: center columns are more valuable)
     # We extract the center column and count how many of our pieces are in it.

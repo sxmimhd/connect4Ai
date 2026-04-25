@@ -128,7 +128,7 @@ export default function Game({
   const [error, setError] = useState('');
   const [gameStatus, setGameStatus] = useState<GameStatus>('playing');
 
-  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://samimhd-connect4-ai.hf.space';
 
   const isGameOver = gameStatus !== 'playing';
   const validColumns = useMemo(

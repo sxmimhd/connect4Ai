@@ -10,7 +10,11 @@ const difficulties = [
   { name: 'Expert', depth: 7, color: 'text-purple-500 border-purple-500 shadow-[0_0_15px_#a855f7]' }
 ];
 
-export default function Start({ onStartGame }) {
+interface StartProps {
+  onStartGame: (depth: number) => void;
+}
+
+export default function Start({ onStartGame }: StartProps) {
   const [selectedDepth, setSelectedDepth] = useState(4); // Default to Medium
 
   return (
