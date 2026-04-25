@@ -313,7 +313,7 @@ export default function Game({
           </div>
           
           {/* Column Indicators (1-7) */}
-          <div className="grid grid-cols-7 gap-1 sm:gap-2 mt-3 sm:mt-4 w-full px-1 sm:px-2 text-center text-pink-500 font-bold min-w-max">
+          <div className="grid grid-cols-7 gap-1 sm:gap-2 mt-3 sm:mt-4 text-center text-pink-500 font-bold min-w-max">
             {[1, 2, 3, 4, 5, 6, 7].map((num, index) => (
               <div
                 key={num}
